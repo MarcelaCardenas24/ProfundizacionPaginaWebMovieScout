@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información de Películas</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h5 mb-0"><i class="bi bi-camera-reels me-2"></i>MovieScout</h1>
+      <a href="index.html" class="btn btn-outline-light btn-sm">← Volver al listado</a>
+    </div>
+  </header>
+
+  <main class="container my-4" id="informacion-contenedor">
+
+    <!-- ========================================================= -->
+    <!-- 1. DESTINO FINAL: LAZOS DE SANGRE -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="1" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/Destinofinal6.png" class="img-fluid rounded" alt="Destino Final: Lazos de Sangre">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>Destino Final: Lazos de Sangre <small class="text-muted">(2025)</small></h2>
+          <p><strong>Género:</strong> Terror</p>
+          <p><strong>Sinopsis:</strong> Stefanie vuelve a casa para enfrentar una serie de sucesos mortales que parecen seguir un patrón inevitable de destino.</p>
+          <p><strong>Reseña:</strong> Una entrega escalofriante que revive el destino inevitable con nuevas muertes impactantes.</p>
+        </div>
+      </div>
+      <hr>
+      <section class="container mt-4">
+        <h3 class="mb-3 text-center">Actores principales</h3>
+        <div class="row g-4 text-center">
+
+          
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 h-100">
+              <img src="imgs/kaitlyn_santa_juana.jpg" class="card-img-top"  alt="Kaitlyn Santa Juana">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Kaitlyn Santa Juana</h6>
+                <small>Stefanie Reyes Campbell</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card shadow-sm h-100">
+              <img src="imgs/teobriones.jpg" class="card-img-top " alt="Teo Briones">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Teo Briones</h6>
+                <small>Charlie Reyes Campbell</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card border-0 shadow-sm h-100">
+              <img src="imgs/tonnytodd.jpg" class="card-img-top" alt="Tony Todd">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Tony Todd</h6>
+                <small>William Bludworth</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-1" class="mb-3"></div>
+        <input id="nombre-comentario-1" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-1" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="1">Publicar comentario</button>
+      </section>
+    </article>
+
+    <!-- ========================================================= -->
+    <!-- 2. AVATAR 3 -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="2" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/Avatar3.jpeg" class="img-fluid rounded" alt="Avatar 3">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>Avatar 3 <small class="text-muted">(2025)</small></h2>
+          <p><strong>Género:</strong> Ciencia ficción</p>
+          <p><strong>Sinopsis:</strong> Jake y Neytiri deben proteger a su familia cuando nuevas amenazas surgen en Pandora.</p>
+          <p><strong>Reseña:</strong> Una continuación visualmente impresionante que expande el universo de Pandora con gran emoción.</p>
+        </div>
+      </div>
+      <hr>
+      <section class="mt-4">
+        <h3 class="text-center mb-3">Actores principales</h3>
+        <div class="row g-4 text-center">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="imgs/SamWorthington.jpg" class="card-img-top" alt="Sam Worthington">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Sam Worthington</h6>
+                <small>Jake Sully</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="imgs/zoesaldana.jpg" class="card-img-top" alt="Zoe Saldaña">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Zoe Saldaña</h6>
+                <small>Neytiri</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="imgs/sigourneyweaver.jpg" class="card-img-top" alt="Sigourney Weaver">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Sigourney Weaver</h6>
+                <small>Kiri</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-2" class="mb-3"></div>
+        <input id="nombre-comentario-2" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-2" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="2">Publicar comentario</button>
+      </section>
+    </article>
+
+    <!-- ========================================================= -->
+    <!-- 3. LA PRIMERA PROFECÍA -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="3" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/laprofecia.jpeg" class="img-fluid rounded" alt="La primera profecía">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>La primera profecía <small class="text-muted">(2024)</small></h2>
+          <p><strong>Género:</strong> Terror</p>
+          <p><strong>Sinopsis:</strong> Una joven monja descubre una conspiración aterradora que da origen al nacimiento del Anticristo.</p>
+          <p><strong>Reseña:</strong> Una precuela inquietante que retoma la esencia del terror clásico con una ambientación escalofriante.</p>
+        </div>
+      </div>
+      <hr>
+      <section class="mt-4">
+        <h3 class="text-center mb-3">Actores principales</h3>
+        <div class="row g-4 text-center">
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="imgs/NellTiger.jpg" class="card-img-top" alt="Nell Tiger Free">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Nell Tiger Free</h6>
+                <small>Margaret</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="imgs/Tawfeek Barhom.jpg" class="card-img-top" alt="Tawfeek Barhom">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Tawfeek Barhom</h6>
+                <small>Padre Gabriel</small>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-4">
+            <div class="card h-100 border-0 shadow-sm">
+              <img src="imgs/SôniaBraga.jpg" class="card-img-top" alt="Sônia Braga">
+              <div class="card-body bg-dark text-white">
+                <h6 class="card-title mb-1">Sônia Braga</h6>
+                <small>Hermana Silva</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-3" class="mb-3"></div>
+        <input id="nombre-comentario-3" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-3" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="3">Publicar comentario</button>
+      </section>
+    </article>
+
+        <!-- ========================================================= -->
+    <!-- 4. OPPENHEIMER -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="4" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/oppenheimer.jpeg" class="img-fluid rounded" alt="Oppenheimer">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>Oppenheimer <small class="text-muted">(2023)</small></h2>
+          <p><strong>Género:</strong> Drama</p>
+          <p><strong>Sinopsis:</strong> La historia del físico J. Robert Oppenheimer y su papel crucial en la creación de la bomba atómica.</p>
+          <p><strong>Reseña:</strong> Un retrato profundo del genio y la culpa, con interpretaciones poderosas y dirección impecable de Christopher Nolan.</p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="text-center mb-3">Actores principales</h3>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/Cillian_Murphy.jpg" class="card-img-top" alt="Cillian Murphy">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Cillian Murphy</h6>
+              <small>J. Robert Oppenheimer</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/Emily_Blunt.png" class="card-img-top" alt="Emily Blunt">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Emily Blunt</h6>
+              <small>Katherine Oppenheimer</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/Robert_Downey_Jr.jpg" class="card-img-top" alt="Robert Downey Jr.">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Robert Downey Jr.</h6>
+              <small>Lewis Strauss</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-4" class="mb-3"></div>
+        <input id="nombre-comentario-4" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-4" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="4">Publicar comentario</button>
+      </section>
+    </article>
+
+    <!-- ========================================================= -->
+    <!-- 5. JOHN WICK 4 -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="5" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/JhonWick4.jpg" class="img-fluid rounded" alt="John Wick 4">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>John Wick 4 <small class="text-muted">(2023)</small></h2>
+          <p><strong>Género:</strong> Acción</p>
+          <p><strong>Sinopsis:</strong> John Wick lucha por su libertad enfrentándose a los asesinos más poderosos del mundo.</p>
+          <p><strong>Reseña:</strong> Una explosión de acción, elegancia visual y coreografías impresionantes.</p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="text-center mb-3">Actores principales</h3>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/keanureeves (2).jpg" class="card-img-top" alt="Keanu Reeves">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Keanu Reeves</h6>
+              <small>John Wick</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/DonnieYen.jpg" class="card-img-top" alt="Donnie Yen">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Donnie Yen</h6>
+              <small>Caine</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/laurencefishburne.jpg" class="card-img-top" alt="Laurence Fishburne">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Laurence Fishburne</h6>
+              <small>Bowery King</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-5" class="mb-3"></div>
+        <input id="nombre-comentario-5" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-5" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="5">Publicar comentario</button>
+      </section>
+    </article>
+
+    <!-- ========================================================= -->
+    <!-- 6. THE BATMAN -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="6" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/thebatman.jpg" class="img-fluid rounded" alt="The Batman">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>The Batman <small class="text-muted">(2022)</small></h2>
+          <p><strong>Género:</strong> Acción</p>
+          <p><strong>Sinopsis:</strong> Batman investiga una ola de asesinatos en Ciudad Gótica mientras enfrenta su lado más oscuro.</p>
+          <p><strong>Reseña:</strong> Una versión sombría y realista del caballero de la noche, con una actuación destacada de Robert Pattinson.</p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="text-center mb-3">Actores principales</h3>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/Robert_Pattinson.png" class="card-img-top" alt="Robert Pattinson">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Robert Pattinson</h6>
+              <small>Bruce Wayne / Batman</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/Zoe_Kravitz.jpg" class="card-img-top" alt="Zoë Kravitz">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Zoë Kravitz</h6>
+              <small>Selina Kyle / Gatúbela</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/PaulDano.jpg" class="card-img-top" alt="Paul Dano">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Paul Dano</h6>
+              <small>El Acertijo</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-6" class="mb-3"></div>
+        <input id="nombre-comentario-6" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-6" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="6">Publicar comentario</button>
+      </section>
+    </article>
+
+        <!-- ========================================================= -->
+    <!-- 7. LA BALLENA -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="7" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/laballena.jpg" class="img-fluid rounded" alt="La ballena">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>La ballena <small class="text-muted">(2022)</small></h2>
+          <p><strong>Género:</strong> Drama</p>
+          <p><strong>Sinopsis:</strong> Un profesor con obesidad mórbida intenta reconectarse con su hija adolescente antes de que sea demasiado tarde.</p>
+          <p><strong>Reseña:</strong> Un relato conmovedor sobre la redención, la empatía y la esperanza, impulsado por una actuación magistral de Brendan Fraser.</p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="text-center mb-3">Actores principales</h3>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/BrendanFraser.png" class="card-img-top" alt="Brendan Fraser">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Brendan Fraser</h6>
+              <small>Charlie</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/SadieSink.jpg" class="card-img-top" alt="Sadie Sink">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Sadie Sink</h6>
+              <small>Ellie</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/HongChau.png" class="card-img-top" alt="Hong Chau">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Hong Chau</h6>
+              <small>Liz</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-7" class="mb-3"></div>
+        <input id="nombre-comentario-7" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-7" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="7">Publicar comentario</button>
+      </section>
+    </article>
+
+    <!-- ========================================================= -->
+    <!-- 8. FREE GUY: TOMANDO EL CONTROL -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="8" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/freeguy.png" class="img-fluid rounded" alt="Free Guy">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>Free Guy: Tomando el control <small class="text-muted">(2021)</small></h2>
+          <p><strong>Género:</strong> Comedia</p>
+          <p><strong>Sinopsis:</strong> Un cajero de banco descubre que es un personaje secundario dentro de un videojuego y decide cambiar su destino.</p>
+          <p><strong>Reseña:</strong> Divertida, fresca y con gran corazón, una historia sobre libertad y propósito en un mundo digital.</p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="text-center mb-3">Actores principales</h3>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/RyanReynolds.jpg" class="card-img-top" alt="Ryan Reynolds">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Ryan Reynolds</h6>
+              <small>Guy</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/JodieComer.jpeg" class="card-img-top" alt="Jodie Comer">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Jodie Comer</h6>
+              <small>Millie / Molotov Girl</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/TaikaWaititi.jpg" class="card-img-top" alt="Taika Waititi">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Taika Waititi</h6>
+              <small>Antoine</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-8" class="mb-3"></div>
+        <input id="nombre-comentario-8" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-8" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="8">Publicar comentario</button>
+      </section>
+    </article>
+
+    <!-- ========================================================= -->
+    <!-- 9. CRUELLA -->
+    <!-- ========================================================= -->
+    <article class="ficha" data-id="9" style="display:none;">
+      <div class="row g-3">
+        <div class="col-12 col-md-4">
+          <img src="imgs/cruella.jpg" class="img-fluid rounded" alt="Cruella">
+        </div>
+        <div class="col-12 col-md-8">
+          <h2>Cruella <small class="text-muted">(2021)</small></h2>
+          <p><strong>Género:</strong> Comedia</p>
+          <p><strong>Sinopsis:</strong> Una joven diseñadora rebelde descubre el oscuro camino que la llevará a convertirse en Cruella de Vil.</p>
+          <p><strong>Reseña:</strong> Una historia visualmente deslumbrante con una actuación magnífica de Emma Stone y un estilo punk irresistible.</p>
+        </div>
+      </div>
+      <hr>
+      <h3 class="text-center mb-3">Actores principales</h3>
+      <div class="row g-4 text-center">
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/EmmaStone.jpg" class="card-img-top" alt="Emma Stone">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Emma Stone</h6>
+              <small>Estella / Cruella</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/EmmaThompson.jpg" class="card-img-top" alt="Emma Thompson">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Emma Thompson</h6>
+              <small>La Baronesa</small>
+            </div>
+          </div>
+        </div>
+        <div class="col-12 col-sm-6 col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <img src="imgs/joelfry.jpg" class="card-img-top" alt="Joel Fry">
+            <div class="card-body bg-dark text-white">
+              <h6 class="card-title mb-1">Joel Fry</h6>
+              <small>Jasper</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <section>
+        <h3>Comentarios</h3>
+        <div id="lista-comentarios-9" class="mb-3"></div>
+        <input id="nombre-comentario-9" class="form-control mb-2" placeholder="Tu nombre (opcional)">
+        <textarea id="input-comentario-9" class="form-control mb-2" rows="3" placeholder="Tu comentario…"></textarea>
+        <button class="btn btn-dark" data-comentario-for="9">Publicar comentario</button>
+      </section>
+    </article>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center p-3">
+    <small>© 2025 MovieScout-Lesly Marcela Cardenas Avila</small>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- SCRIPTS -->
+  <!-- ========================================================= -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Mostrar la ficha según el parámetro ?id
+    (function() {
+      const params = new URLSearchParams(location.search);
+      const id = params.get('id') || '1';
+      const fichas = document.querySelectorAll('.ficha');
+      fichas.forEach(f => f.style.display = (f.dataset.id === id) ? '' : 'none');
+
+      // Manejar comentarios
+      document.querySelectorAll('button[data-comentario-for]').forEach(btn => {
+        const pid = btn.getAttribute('data-comentario-for');
+        const lista = document.getElementById('lista-comentarios-' + pid);
+        const input = document.getElementById('input-comentario-' + pid);
+        const nombre = document.getElementById('nombre-comentario-' + pid);
+        const key = 'comentarios_peli_' + pid;
+
+        function cargar() {
+          lista.innerHTML = '';
+          const comentarios = JSON.parse(localStorage.getItem(key) || '[]');
+          comentarios.forEach(c => {
+            const p = document.createElement('p');
+            p.innerHTML = '<strong>' + (c.nombre || 'Anónimo') + ':</strong> ' + c.texto;
+            lista.appendChild(p);
+          });
+        }
+
+        cargar();
+
+        btn.addEventListener('click', () => {
+          const texto = input.value.trim();
+          const nom = nombre.value.trim();
+          if (!texto) return alert('Escribe un comentario.');
+          const comentarios = JSON.parse(localStorage.getItem(key) || '[]');
+          comentarios.push({ nombre: nom, texto: texto });
+          localStorage.setItem(key, JSON.stringify(comentarios));
+          input.value = '';
+          nombre.value = '';
+          cargar();
+        });
+      });
+    })();
+  </script>
+</body>
+</html>

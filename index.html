@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MovieScout</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Encabezado -->
+  <header class="bg-dark text-white py-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <h1 class="h4 mb-0"><i class="bi bi-camera-reels me-2"></i>MovieScout</h1>
+      <small>AA1_Cardenas_Avila_LeslyMarcela</small>
+    </div>
+  </header>
+
+  <!-- Banner Hero con imagen de fondo -->
+<section class="position-relative" style="height: 500px; overflow: hidden;">
+  <!-- Imagen de fondo -->
+  <img 
+    src="/imgs/DestinoFinalLazosdeSangre.jpeg" 
+    alt="Destino Final: Lazos de Sangre" 
+    class="w-100 h-100 position-absolute top-0 start-0" 
+    style="object-fit:cover; object-position: center;"
+  >
+  
+  <!-- Overlay oscuro -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark" style="opacity: 0.6;"></div>
+  
+  <!-- Contenido del banner -->
+  <div class="container h-100 position-relative">
+    <div class="row h-100 align-items-end pb-5">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h2 class="display-4 fw-bold text-white mb-3">Destino Final: Lazos de Sangre</h2>
+        <p class="lead text-white">
+          Atormentada por una pesadilla violenta y recurrente, una estudiante universitaria
+          regresa a casa para buscar a la única persona que podría romper el ciclo de muerte
+          y salvar a su familia de la espantosa desaparición que inevitablemente les espera a todos.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+  <!-- Buscador y filtros -->
+  <div class="container my-4">
+    <div class="row g-2 mb-3">
+      <div class="col-12 col-md-6">
+        <input type="text" id="buscador" class="form-control" placeholder="Buscar película...">
+      </div>
+      <div class="col-6 col-md-3">
+        <select id="filtro-anio" class="form-select">
+          <option value="">Todas las fechas</option>
+          <option>2025</option>
+          <option>2024</option>
+          <option>2023</option>
+          <option>2022</option>
+          <option>2021</option>
+        </select>
+      </div>
+      <div class="col-6 col-md-3">
+        <select id="filtro-genero" class="form-select">
+          <option value="">Todos los géneros</option>
+          <option>Terror</option>
+          <option>Drama</option>
+          <option>Acción</option>
+          <option>Ciencia ficción</option>
+          <option>Comedia</option>
+        </select>
+      </div>
+    </div>
+
+    <!-- Tarjetas de películas -->
+    <div class="row" id="lista-peliculas">
+
+      <!-- 2025 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2025" data-genero="Terror">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/Destinofinal6.png" class="card-img-top" alt="Destino Final: Lazos de Sangre">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">Destino Final: Lazos de Sangre</h5>
+            <p class="small mb-1">2025 · Terror</p>
+            <p>Stefanie vuelve a casa para encontrar a la única persona que podría salvar a su familia, su familiar es su abuela.</p>
+            <a href="informacion.html?id=1" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2025" data-genero="Ciencia ficción">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/Avatar3.jpeg" class="card-img-top" alt="Avatar 3">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">Avatar 3</h5>
+            <p class="small mb-1">2025 · Ciencia ficción</p>
+            <p>Jake y Neytiri enfrentan un nuevo conflicto que pondrá en peligro el equilibrio de Pandora.</p>
+            <a href="informacion.html?id=2" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+
+      <!-- 2024 -->
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2024" data-genero="Terror">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/laprofecia.jpeg" class="card-img-top" alt="La primera profecía">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">La primera profecía</h5>
+            <p class="small mb-1">2024 · Terror</p>
+            <p>Una joven descubre una conspiración aterradora en un convento mientras se enfrenta a fuerzas demoníacas.</p>
+            <a href="informacion.html?id=3" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2023" data-genero="Drama">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/oppenheimer.jpeg" class="card-img-top" alt="Oppenheimer">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">Oppenheimer</h5>
+            <p class="small mb-1">2023 · Drama</p>
+            <p>La historia del físico J. Robert Oppenheimer y la creación de la bomba atómica.</p>
+            <a href="informacion.html?id=4" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2023" data-genero="Acción">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/JhonWick4.jpg" class="card-img-top" alt="John Wick 4">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">John Wick 4</h5>
+            <p class="small mb-1">2023 · Acción</p>
+            <p>John Wick busca su libertad enfrentándose a los asesinos más poderosos del mundo.</p>
+            <a href="informacion.html?id=5" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2022" data-genero="Acción">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/Thebatman.jpg" class="card-img-top" alt="The Batman">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">The Batman</h5>
+            <p class="small mb-1">2022 · Acción</p>
+            <p>Batman investiga asesinatos en Ciudad Gótica mientras enfrenta su lado más oscuro.</p>
+            <a href="informacion.html?id=6" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2022" data-genero="Drama">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/laballena.jpg" class="card-img-top" alt="La ballena">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">La ballena</h5>
+            <p class="small mb-1">2022 · Drama</p>
+            <p>Un profesor con obesidad mórbida intenta reconectarse con su hija adolescente adolescente antes de que sea tarde.</p>
+            <a href="informacion.html?id=7" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- 2021 -->
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2021" data-genero="Comedia">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/freeguy.png" class="card-img-top" alt="Free Guy: Tomando el control">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">Free Guy: Tomando el control</h5>
+            <p class="small mb-1">2021 · Comedia</p>
+            <p>Un cajero de banco descubre que es un personaje secundario dentro de un videojuego.</p>
+            <a href="informacion.html?id=8" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-12 col-sm-6 col-md-4 mb-4" data-anio="2021" data-genero="Comedia">
+        <div class="card h-100 shadow-sm">
+          <img src="imgs/cruella.jpg" class="card-img-top" alt="Cruella">
+          <div class="card-body">
+            <h5 class="pelicula-titulo">Cruella</h5>
+            <p class="small mb-1">2021 · Comedia</p>
+            <p>Una joven diseñadora rebelde descubre el oscuro camino que la llevará a convertirse en Cruella de Vil.</p>
+            <a href="informacion.html?id=9" class="btn btn-dark">Ver información</a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+    
+  <footer class="bg-dark text-white text-center p-3">
+    <small>© 2025 MovieScout-Lesly Marcela Cardenas Avila</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/funciones.js"></script>
+</body>
+</html>
