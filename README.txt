@@ -10,6 +10,9 @@ Julian David Gomez Perez
 Octubre 27, 2025
 
 
+Link de Github: https://github.com/MarcelaCardenas24/ProfundizacionPaginaWebMovieScout.git
+
+
 Descripción general
 
 Se realiza la actividad academica en donde se diseña la pagina web 
