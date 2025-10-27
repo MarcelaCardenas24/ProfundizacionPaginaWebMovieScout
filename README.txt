@@ -181,7 +181,7 @@ y mejorando la legibilidad del código.
 
     input,
     textarea {
-      background-color: #666666; // gris oscuro
+      background-color: #848383; // gris oscuro
       color: $color-texto;
       border: 1px solid lighten($color-fondo, 15%);
       border-radius: $borde-radio;
