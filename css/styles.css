@@ -59,11 +59,47 @@ body {
   background-color: #531E0E;
 }
 
-#lista-comentarios p {
-  background: #a9a9a9;
-  padding: 0.5rem;
-  border-radius: 0.25rem;
-  border: 1px solid rgba(0, 0, 0, 0.05);
+.comentarios {
+  margin-top: 40px;
+}
+.comentarios h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+.comentarios input,
+.comentarios textarea {
+  background-color: #2a2a2a;
+  color: #f1f1f1;
+  border: 1px solid #444;
+  border-radius: 8px;
+  padding: 10px;
+  width: 100%;
+  font-family: inherit;
+}
+.comentarios input::-moz-placeholder, .comentarios textarea::-moz-placeholder {
+  color: #aaa;
+}
+.comentarios input::placeholder,
+.comentarios textarea::placeholder {
+  color: #aaa;
+}
+.comentarios input:focus,
+.comentarios textarea:focus {
+  outline: none;
+  border-color: #ff4b4b;
+  background-color: #3a3a3a;
+}
+.comentarios button {
+  background-color: #0d0000;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.comentarios button:hover {
+  background-color: #ff4b4b;
 }
 
 @media (max-width: 575px) {
@@ -92,6 +128,62 @@ header h1 {
 header small {
   font-size: 0.9rem;
   opacity: 0.8;
+}
+
+.card {
+  background-color: white;
+}
+.card h5 {
+  font-weight: bold;
+  color: #ffffff;
+}
+.card p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+.comentarios {
+  background-color: #0D0000;
+  color: #ffffff;
+  padding: 20px;
+}
+.comentarios h3 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+.comentarios input,
+.comentarios textarea {
+  background-color: #666666;
+  color: #ffffff;
+  border: 1px solid rgb(89.5, 0, 0);
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+.comentarios input::-moz-placeholder, .comentarios textarea::-moz-placeholder {
+  color: white;
+}
+.comentarios input::placeholder,
+.comentarios textarea::placeholder {
+  color: white;
+}
+.comentarios input:focus,
+.comentarios textarea:focus {
+  border-color: #ffffff;
+  outline: none;
+}
+.comentarios button {
+  background-color: #ffffff;
+  color: #0D0000;
+  border: none;
+  border-radius: 0.25rem;
+  padding: 8px 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.comentarios button:hover {
+  background-color: #531E0E;
 }
 
 .caja-1 {

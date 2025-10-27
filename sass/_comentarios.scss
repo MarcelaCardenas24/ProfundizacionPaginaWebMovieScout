@@ -1,9 +1,48 @@
-//Seccion de comentarios
-#lista-comentarios {
-  p {
-    background:  #a9a9a9;
-    padding: 0.5rem;
-    border-radius: $borde-radio;
-    border: 1px solid $color-borde;
+// ============================
+// Estilos para los comentarios
+// ============================
+
+.comentarios {
+  margin-top: 40px;
+
+  h3 {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+
+  input,
+  textarea {
+    background-color:#2a2a2a; // gris oscuro del fondo
+    color: #f1f1f1; // texto claro
+    border: 1px solid #444; // borde sutil
+    border-radius: 8px;
+    padding: 10px;
+    width: 100%;
+    font-family: inherit;
+
+    &::placeholder {
+      color: #aaa; // gris más claro para el texto del placeholder
+    }
+
+    &:focus {
+      outline: none;
+      border-color: #ff4b4b; // rojo suave en foco
+      background-color: #3a3a3a; // un poco más claro al escribir
+    }
+  }
+
+  button {
+    background-color: #0d0000;
+    color: #fff;
+    border: none;
+    padding: 10px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #ff4b4b;
+    }
   }
 }
+

@@ -1,13 +1,13 @@
 MovieScout – Página web de películas
 
-Actividad de Contextualización
+Actividad de Profundización
 Lesly Marcela Cárdenas Ávila
 leslymcardenas@ucompensar.edu.co
 Ingeniería de Software
 Fundación Universitaria Compensar
 Desarrollo De Software Web Front-end
 Julian David Gomez Perez
-Octubre 14, 2025
+Octubre 27, 2025
 
 
 Descripción general
@@ -82,3 +82,159 @@ de Bootstrap Icons para agregar elementos visuales al encabezado y
 a otras partes.  Su integración posibilita que la web sea totalmente 
 responsiva y que el estilo permanezca coherente en dispositivos 
 móviles, tabletas y ordenadores.
+
+Implementación de Sass y modularización del CSS
+
+En esta nueva implementación de la pagina web MovieScout se implementó el
+preprocesador **Sass (Syntactically Awesome Style Sheets)** con el propósito
+de optimizar, modularizar y mantener de forma más ordenada los estilos del 
+sitio web, cumpliendo con la actividad individual de profundizacion.  
+
+Para ello, se creó una carpeta denominada sass que contiene seis archivos .scss, 
+los cuales representan módulos derivados y reorganizados del antiguo archivo 
+styles.css:
+
+- _variables.scss: Define las variables reutilizables del proyecto, tales como 
+colores principales, secundarios, tipografías y tamaños de texto.Estas variables
+permiten mantener coherencia en el diseño y facilitar futuros cambios globales. 
+
+- _base.scss: Contiene los estilos generales de la página, como los márgenes, 
+el color de fondo, el tipo de fuente y las configuraciones iniciales aplicadas 
+al cuerpo del documento (`body`).  
+
+- _cards.scss: Agrupa los estilos específicos de las tarjetas de películas, 
+incluyendo la estructura, los efectos al pasar el cursor (*hover*), la altura
+uniforme de las imágenes y la disposición del contenido interno de cada card. 
+
+- _comentarios.scss: Reúne los estilos aplicados a la sección de comentarios.
+Se mejoró la apariencia del formulario, utilizando tonos oscuros en los campos 
+de texto y personalizando los *placeholders* para que se adapten al diseño 
+general del sitio.  
+
+- _responsive.scss: Incluye las reglas *media queries* que aseguran la correcta
+visualización del sitio en dispositivos móviles, tabletas y pantallas de 
+escritorio, manteniendo una apariencia adaptable (*responsive*).  
+
+- styles.scss: Archivo principal que importa todos los módulos anteriores
+y genera el archivo final `styles.css` utilizado por la página web.
+
+Finalmente, todos los módulos se importan dentro del archivo principal 
+**`styles.scss`**, el cual es compilado automáticamente por el
+*Live Sass Compiler* en Visual Studio Code para generar el archivo final 
+**`styles.css`**, utilizado por la página web.
+
+Características técnicas implementadas
+
+- Variables: permiten definir valores reutilizables (como colores o tamaños)
+ para mantener consistencia visual. 
+
+  Ejemplo:  
+  
+  scss
+  $color-principal: #0d0000;
+  $color-secundario: #ff4b4b;
+  
+
+- Anidación: se utilizó para agrupar reglas relacionadas, reduciendo la repetición 
+y mejorando la legibilidad del código.  
+  Ejemplo:  
+  scss
+
+  header {
+    background-color: $color-principal;
+    color: white;
+    padding: 10px;
+
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    small {
+      font-size: 0.9rem;
+      opacity: 0.8;
+    }
+  }
+
+  .card {
+    background-color: white;
+
+    h5 {
+      font-weight: bold;
+      color: $color-principal;
+    }
+
+    p {
+      color: #555;
+      font-size: 0.9rem;
+    }
+  }
+
+  .comentarios {
+    background-color: $color-fondo;
+    color: $color-texto;
+    padding: 20px;
+
+    h3 {
+      color: $color-texto;
+      margin-bottom: 10px;
+    }
+
+    input,
+    textarea {
+      background-color: #666666; // gris oscuro
+      color: $color-texto;
+      border: 1px solid lighten($color-fondo, 15%);
+      border-radius: $borde-radio;
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+
+      &::placeholder {
+        color: lighten($color-texto, 35%);
+      }
+
+      &:focus {
+        border-color: $color-principal;
+        outline: none;
+      }
+    }
+
+    button {
+      background-color: $color-principal;
+      color: $color-fondo;
+      border: none;
+      border-radius: $borde-radio;
+      padding: 8px 12px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: #531E0E;
+      }
+    }
+  }
+
+  
+
+- Interpolación: se aplicó para generar clases dinámicas de forma automática, simplificando la creación de estilos repetitivos.  
+  Ejemplo 1 (clases `.caja-#{$i}`):  
+  scss
+  @for $i from 1 through 3 {
+    .caja-#{$i} {
+      background-color: lighten($color-principal, 20%);
+    }
+  }
+  
+  Ejemplo 2 (clases `.texto-#{$i}`):  
+  scss
+  @for $i from 1 through 3 {
+    .texto-#{$i} {
+      font-size: #{$i * 5}px;
+    }
+  }
+
+
+Con esta implementación, el proyecto MovieScout logra una estructura más 
+escalable, profesional y fácil de mantener, aplicando buenas prácticas de
+desarrollo front-end mediante el uso de Sass y la organización modular 
+del código CSS.
