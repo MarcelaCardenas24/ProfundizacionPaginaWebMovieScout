@@ -56,11 +56,11 @@ body {
   transition: background-color 0.3s ease;
 }
 .card .card-body a:hover {
-  background-color: #ff4b4b;
+  background-color: #531E0E;
 }
 
 #lista-comentarios p {
-  background: #fff;
+  background: #a9a9a9;
   padding: 0.5rem;
   border-radius: 0.25rem;
   border: 1px solid rgba(0, 0, 0, 0.05);
