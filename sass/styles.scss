@@ -1,0 +1,46 @@
+// ===========================
+// IMPORTAR MÓDULOS
+// ===========================
+@import 'variables';
+@import 'base';
+@import 'cards';
+@import 'comentarios';
+@import 'responsive';
+
+// ===========================
+// ANIDACIÓN
+// ===========================
+header {
+  background-color: $color-principal;
+  color: white;
+  padding: 10px;
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  small {
+    font-size: 0.9rem;
+    opacity: 0.8;
+  }
+}
+
+
+// ===========================
+// INTERPOLACIÓN
+// ===========================
+
+// Ejemplo 1 → Interpolación en el nombre de la clase
+@for $i from 1 through 3 {
+  .caja-#{$i} {
+    background-color: lighten($color-principal, 30%);
+    padding: 10px;
+  }
+}
+
+// Ejemplo 2 → Interpolación en el valor
+@for $i from 1 through 3 {
+  .texto-#{$i} {
+    font-size: #{$i * 5}px;
+  }
+}

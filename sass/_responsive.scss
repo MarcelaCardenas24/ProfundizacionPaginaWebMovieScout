@@ -1,0 +1,18 @@
+//Media queries para cards
+@media (max-width: 575px) {
+  .card-img-top {
+    height: 180px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .card-img-top {
+    height: 200px;
+  }
+}
+
+@media (min-width: 768px) {
+  .card-img-top {
+    height: 240px;
+  }
+}
