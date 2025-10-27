@@ -10,7 +10,7 @@ Julian David Gomez Perez
 Octubre 27, 2025
 
 
-Link de Github: https://github.com/MarcelaCardenas24/ProfundizacionPaginaWebMovieScout.git
+Link de Github: https://github.com/MarcelaCardenas24/AA2_Cardenas_Avila_LeslyMarcela-Profundizacion.git
 
 
 Descripción general
